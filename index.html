@@ -71,8 +71,8 @@ let performanceReportDate = new Date().toLocaleDateString("en-CA");
 let performanceReportSource = "fallback";
 let referenceStatuses = {};
 let recordData=[
- {title:"Physical file management",subtitle:"Record management progress",rows:[["Reviewed",0,48],["To be transferred to NAI",null,"N/A"],["Identified for weeding",0,24],["Weeded",0,24]]},
- {title:"e-File management",subtitle:"Target: 25",rows:[["Reviewed",0,25],["Closed",0,0]]}
+ {title:"Record Management (Physical Files)",subtitle:"Physical Files (Total Target: )",rows:[["Reviewed",2,50],["To be transferred to NAI",null,"NA"],["Identified for weeding",1,25],["Weeded",1,25]]},
+ {title:"Record Management (e-Files)",subtitle:"e-Files (Total Target: 25)",rows:[["Reviewed",2,27],["Closed",0,0]]}
 ];
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -100,7 +100,8 @@ function renderPerformance(){
 function renderRecords(){
   const grid=$("records-grid");
   if(!grid) return;
-  grid.innerHTML=recordData.map(g=>`<article class="record-card"><h3>${esc(g.title)}</h3><div class="record-sub">${esc(g.subtitle)}</div>${g.rows.map(r=>`<div class="record-row"><div class="record-row-head"><strong>${esc(r[0])}</strong><span>Today: ${fmt(r[1])} &nbsp;·&nbsp; Cumulative: ${fmt(r[2])}</span></div></div>`).join("")}</article>`).join("");
+  const reportDate=formatReportDate(performanceReportDate);
+  grid.innerHTML=recordData.map(g=>`<article class="record-card"><h3>${esc(g.title)}</h3><div class="record-sub"><strong>${esc(g.subtitle)}</strong></div><div class="record-row record-row-head"><strong>Activity</strong><span><strong>Today's Achievement (Date: ${esc(reportDate)})</strong> &nbsp;·&nbsp; <strong>Cumulative/Total Progress</strong></span></div>${g.rows.map(r=>`<div class="record-row"><div class="record-row-head"><strong>${esc(r[0])}</strong><span>${fmt(r[1])} &nbsp;·&nbsp; ${fmt(r[2])}</span></div></div>`).join("")}</article>`).join("");
 }
 async function loadPerformanceReport(){
   const status=$("performance-status");
