@@ -1,154 +1,1287 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0b2b4c">
 <title>SCDPM 6 | Regional Labour Institute, Kolkata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0c2944;--blue:#125b78;--teal:#138b83;--orange:#f28b2d;--ink:#1d3448;--muted:#718296;--line:#e2e9ef;--bg:#f5f7fa;--white:#fff;--green:#16815f;--shadow:0 12px 32px rgba(18,48,72,.055)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}
-.topline{height:5px;background:linear-gradient(90deg,var(--orange) 0 20%,#fff 20% 40%,var(--teal) 40% 100%)}
-header{background:#fff;border-bottom:1px solid var(--line)}.head{max-width:1240px;margin:auto;padding:20px 28px;display:flex;align-items:center;gap:17px}.mark{height:54px;width:54px;border-radius:16px;display:grid;place-items:center;background:#e8f4f5;color:var(--blue);font-size:27px;flex-shrink:0}.head-copy{flex:1}.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;color:var(--teal);font-weight:850}.head h1{font-size:clamp(1.25rem,2.6vw,1.9rem);line-height:1.2;margin:4px 0;color:var(--navy);letter-spacing:-.025em}.institution{display:inline-block;color:#8a3b00;font-weight:900;background:#fff0df;border:1px solid #ffc078;border-radius:7px;padding:2px 9px;animation:pulse 2.2s infinite}@keyframes pulse{0%{box-shadow:0 0 0 0 #f28b2d55}70%{box-shadow:0 0 0 7px #f28b2d00}100%{box-shadow:0 0 0 0 #f28b2d00}}.head-note{font-size:.84rem;color:var(--muted);margin-top:6px}.campaign-meta{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:140px}.campaign-tag{border:1px solid #ffc078;color:#8a3b00;background:#fff0df;border-radius:99px;padding:8px 12px;font-size:.82rem;font-weight:900;white-space:nowrap;animation:pulse 2.2s infinite}.campaign-date{font-size:.82rem;font-weight:850;letter-spacing:.04em;color:#087e79;background:#e8fbf8;border:1px solid #9fe6dc;border-radius:8px;padding:5px 11px;white-space:nowrap;animation:tealPulse 2.2s infinite}@keyframes tealPulse{0%{box-shadow:0 0 0 0 #13a89a55}70%{box-shadow:0 0 0 7px #13a89a00}100%{box-shadow:0 0 0 0 #13a89a00}}
-nav{background:var(--navy);color:#e5f0f5}nav .nav-inner{max-width:1240px;margin:auto;padding:0 28px;display:flex;gap:23px;overflow:auto}nav a{font-size:.83rem;padding:12px 0;white-space:nowrap;border-bottom:2px solid transparent}nav a:hover{border-color:var(--orange);color:#fff}
-main{max-width:1240px;margin:auto;padding:25px 28px 45px}.top-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}.status{font-size:.8rem;color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid transparent;border-radius:9px;padding:9px 12px;font-weight:750;font-size:.84rem;cursor:pointer}.btn-primary{background:var(--teal);color:#fff}.btn-light{background:#fff;border-color:var(--line);color:var(--navy)}.btn-orange{background:#fff0df;color:#914600;border-color:#ffd5a3}.btn:hover{filter:brightness(.98);transform:translateY(-1px)}
-.hero{display:grid;grid-template-columns:1.4fr .6fr;gap:16px;margin-bottom:18px}.hero-main{background:linear-gradient(120deg,#0b2b48,#0c6875);color:#fff;border-radius:18px;padding:clamp(24px,3.5vw,38px);position:relative;overflow:hidden;min-height:238px}.hero-main:after{content:"✦";position:absolute;right:22px;bottom:-67px;font-size:220px;color:#ffffff0c;line-height:1}.hero-label{display:inline-flex;gap:7px;align-items:center;font-size:.73rem;letter-spacing:.09em;font-weight:800;color:#b8eee4;text-transform:uppercase}.hero-main h2{font-size:clamp(1.65rem,3.3vw,2.6rem);line-height:1.1;letter-spacing:-.035em;margin:14px 0 10px;max-width:650px;position:relative;z-index:1}.hero-main p{max-width:600px;color:#d8e9ef;margin:0;position:relative;z-index:1}.hero-buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:21px;position:relative;z-index:1}.hero-buttons .btn-primary{background:#fff;color:var(--navy)}.hero-side{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:space-between}.side-kicker{font-size:.72rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;font-weight:800}.side-number{font-size:3.1rem;line-height:1;font-weight:850;letter-spacing:-.06em;color:var(--navy);margin:12px 0 5px}.side-caption{font-size:.9rem;color:var(--muted)}.side-foot{border-top:1px solid var(--line);padding-top:13px;margin-top:20px;display:flex;justify-content:space-between;gap:10px;font-size:.78rem}.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#19a875;margin-right:5px}
-.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:28px}.metric{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px 18px;box-shadow:var(--shadow)}.metric-head{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:.8rem;color:var(--muted);font-weight:650}.metric-icon{width:34px;height:34px;border-radius:10px;background:#edf7f6;display:grid;place-items:center;font-size:17px}.metric-value{font-size:1.7rem;line-height:1.2;font-weight:850;color:var(--navy);margin-top:11px;letter-spacing:-.035em}.metric-sub{font-size:.75rem;color:var(--muted);margin-top:4px}
-.section{margin-top:29px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:13px}.section-heading h2{margin:0;font-size:1.28rem;letter-spacing:-.02em;color:var(--navy)}.section-heading p{margin:4px 0 0;color:var(--muted);font-size:.86rem}.quiet-link{font-size:.82rem;font-weight:800;color:var(--teal);white-space:nowrap}
-.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:13px}.filters input,.filters select{background:#fff;border:1px solid var(--line);border-radius:9px;padding:10px 12px;color:var(--ink);font-size:.85rem}.filters input{flex:1;min-width:220px}.filters select{min-width:155px}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:260px;transition:transform .18s,box-shadow .18s}.card:hover{transform:translateY(-2px);box-shadow:0 15px 32px #12304810}.card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.cat{font-size:.7rem;font-weight:800;color:#26766f;background:#eaf7f4;border-radius:99px;padding:5px 8px}.card-icon{font-size:22px}.date{font-size:.76rem;color:var(--muted);margin-top:14px}.card h3{font-size:1.02rem;line-height:1.35;margin:5px 0 7px;color:var(--navy)}.card p{font-size:.85rem;color:#5d7183;margin:0}.impact{background:#f0f8f5;border-left:3px solid var(--teal);border-radius:0 8px 8px 0;padding:9px 11px;margin-top:13px;font-size:.8rem;color:#365c57}.card-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto;padding-top:14px}.micro{font-size:.72rem;color:var(--muted)}.detail-btn{border:0;background:transparent;color:var(--teal);font-size:.82rem;font-weight:850;padding:4px 0}.empty{grid-column:1/-1;background:#fff;border:1px dashed #cbd8e0;border-radius:12px;padding:30px;text-align:center;color:var(--muted)}
-.performance{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.perf-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px;box-shadow:var(--shadow)}.perf-title{display:flex;align-items:center;gap:10px}.perf-icon{height:39px;width:39px;border-radius:11px;background:#eff7f6;display:grid;place-items:center;font-size:19px;flex-shrink:0}.perf-title h3{margin:0;font-size:.94rem;color:var(--navy)}.perf-unit{font-size:.74rem;color:var(--muted)}.perf-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:15px 0 12px}.perf-value{background:#f5f7f9;padding:10px;border-radius:9px}.perf-value.daily{background:#fff5e7}.perf-value.total{background:#eaf8f2}.perf-value small{display:block;color:var(--muted);font-size:.69rem}.perf-value b{display:block;font-size:1.05rem;color:var(--navy);margin-top:3px;overflow-wrap:anywhere}.perf-value.total b{color:var(--green)}.bar-head{display:flex;justify-content:space-between;gap:8px;font-size:.73rem;color:var(--muted);margin-bottom:6px}.bar{height:6px;border-radius:99px;background:#e8edf1;overflow:hidden}.bar span{height:100%;display:block;background:linear-gradient(90deg,var(--teal),#42b99a);border-radius:99px}
-.record-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.record-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}.record-card h3{font-size:.98rem;margin:0;color:var(--navy)}.record-sub{font-size:.76rem;color:var(--muted);margin:3px 0 12px}.record-row{padding:10px 0;border-top:1px solid #edf1f4}.record-row-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.record-row strong{font-size:.83rem}.record-row span{font-size:.76rem;color:var(--muted);text-align:right}.record-row .tinybar{height:4px;background:#edf1f4;border-radius:99px;margin-top:8px;overflow:hidden}.record-row .tinybar i{height:100%;display:block;background:var(--teal)}
-.workflow{background:#fff;border:1px solid var(--line);border-radius:14px;padding:19px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.workflow-item{display:flex;gap:10px}.step{height:29px;width:29px;display:grid;place-items:center;flex-shrink:0;border-radius:9px;background:#fff0df;color:#944900;font-weight:850}.workflow-item strong{display:block;font-size:.86rem;color:var(--navy)}.workflow-item span{font-size:.78rem;color:var(--muted)}
-footer{background:#092640;color:#d6e4ec;padding:23px 28px}footer .inner{max-width:1240px;margin:auto;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:.79rem}footer strong{color:#fff}
-.modal{position:fixed;inset:0;background:#071d2bd9;z-index:10;display:none;overflow:auto;padding:18px}.modal.open{display:block}.modal-box{max-width:720px;margin:5vh auto;background:#fff;border-radius:16px;padding:23px}.modal-head{display:flex;justify-content:space-between;gap:12px;align-items:start}.modal h2{margin:0;color:var(--navy)}.modal-content{color:#52697b;font-size:.92rem}.modal-content h3{color:var(--navy);font-size:1rem;margin:18px 0 4px}.modal-content li{margin:5px 0}.hidden{display:none!important}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-side{min-height:160px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:620px){.head{padding:16px}.mark{width:44px;height:44px}.campaign-meta{align-items:flex-start;min-width:0}.campaign-tag{display:inline-block}.campaign-date{font-size:.75rem}nav .nav-inner{padding:0 16px;gap:17px}main{padding:17px 14px 34px}.hero-main{padding:23px;min-height:0}.metrics{gap:8px}.metric{padding:12px}.metric-value{font-size:1.45rem}.cards,.performance,.record-grid,.workflow{grid-template-columns:1fr}.card{min-height:0}.section-heading{align-items:start;flex-direction:column}.filters{display:grid;grid-template-columns:1fr}.filters input,.filters select{width:100%;min-width:0}.perf-value{padding:8px}.perf-value b{font-size:.95rem}footer{padding:20px 14px}}
-.slideshow-wrap{background:linear-gradient(180deg,#eaf7f5,#f5f7fa);border-bottom:1px solid #d8ece8;padding:22px 28px 25px}.slideshow-inner{max-width:1184px;margin:auto}.slide-heading{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:12px}.slide-heading h2{margin:3px 0 0;color:var(--navy);font-size:1.3rem}.slide-heading p{margin:2px 0 0;color:var(--muted);font-size:.85rem}.slide-heading a{color:var(--teal);font-weight:800;font-size:.83rem;white-space:nowrap}.slide-kicker{color:var(--teal);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.slideshow{height:clamp(390px,42vw,560px);position:relative;overflow:hidden;border-radius:16px;background:linear-gradient(120deg,#0c2944,#137f7b);box-shadow:0 14px 32px #0c29441c}.slideshow img{width:100%;height:100%;object-fit:contain;object-position:center;background:#fff;display:block}.slide-stage{display:grid;grid-template-columns:minmax(130px,1fr) minmax(0,2.5fr) minmax(130px,1fr);gap:10px;height:100%;align-items:stretch}.slide-neighbor{min-width:0;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#e8eff3;position:relative}.slide-neighbor img{width:100%;height:100%;object-fit:contain;opacity:.78}.slide-neighbor span{position:absolute;bottom:10px;left:8px;right:8px;text-align:center;color:#fff;font-size:.78rem;font-weight:800;text-shadow:0 1px 5px #000;background:#0c294488;border-radius:6px;padding:4px}.slide-main{min-width:0;position:relative;overflow:hidden;background:#fff}.slide-main img{width:100%;height:100%;object-fit:contain}.slide-main:after{content:"";position:absolute;inset:70% 0 0;background:linear-gradient(transparent,#061c2b80);pointer-events:none}.slide-placeholder{position:absolute;inset:0}.slideshow:after{display:none}.slideshow:after{content:"";position:absolute;inset:70% 0 0;background:linear-gradient(transparent,#061c2b80);pointer-events:none}.slide-placeholder{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;padding:22px;text-align:center;color:#fff}.slide-placeholder strong{font-size:1.15rem}.slide-placeholder span{font-size:.84rem;color:#d9f1ed;max-width:560px}.placeholder-icon{font-size:2.5rem}.slide-arrow{position:absolute;z-index:2;top:50%;transform:translateY(-50%);border:1px solid #ffffff77;background:#071d2b80;color:white;border-radius:50%;width:42px;height:42px;font-size:1.8rem;line-height:1;display:none}.slide-arrow.prev{left:14px}.slide-arrow.next{right:14px}.slide-caption{position:absolute;z-index:2;left:22px;bottom:22px;color:#fff;font-weight:800;font-size:1rem;text-shadow:0 2px 8px #0008}.slide-dots{position:absolute;z-index:2;right:20px;bottom:24px;display:flex;gap:6px}.slide-dot{border:0;width:8px;height:8px;padding:0;border-radius:99px;background:#ffffff8a}.slide-dot.active{width:22px;background:#fff}.slideshow.has-photos .slide-arrow{display:block}@media(max-width:760px){.slide-stage{grid-template-columns: minmax(0,1fr);gap:0}.slide-neighbor{display:none}.slide-main{height:100%}}@media(max-width:620px){.slideshow-wrap{padding:18px 14px}.slide-heading{align-items:start;flex-direction:column}.slide-caption{left:14px;bottom:15px;right:14px}.slide-dots{right:14px;bottom:17px}}
-.matter-table-wrap{overflow-x:auto;overflow-y:auto;max-height:510px;margin-top:12px}.matter-table{width:100%;border-collapse:collapse;background:#fff;font-size:.88rem}.matter-table th{background:#edf7f6;color:var(--navy);text-align:left;font-weight:850}.matter-table th,.matter-table td{padding:12px 13px;border-bottom:1px solid var(--line);vertical-align:top}.matter-table td:first-child{font-weight:750;color:var(--navy);width:31%}.status-pill{display:inline-block;color:#176c66;background:#edf9f5;border:1px solid #cbece1;border-radius:8px;padding:6px 9px;font-size:.8rem}@media(max-width:620px){.slideshow{height:clamp(340px,95vw,500px)}.matter-table{min-width:580px}}
+:root{
+  --navy:#0c2944;
+  --navy-dark:#071d2b;
+  --blue:#125b78;
+  --teal:#138b83;
+  --teal-light:#1ab3a8;
+  --orange:#f28b2d;
+  --orange-light:#ff9f43;
+  --ink:#1d3448;
+  --muted:#64748b;
+  --line:#e2e8f0;
+  --line-light:#edf2f7;
+  --bg:#f8fafc;
+  --white:#fff;
+  --green:#16815f;
+  --shadow:0 4px 20px rgba(12,41,68,.06),0 1px 3px rgba(12,41,68,.03);
+  --shadow-hover:0 10px 28px rgba(12,41,68,.1);
+}
+*{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:15px/1.55 'Inter',ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
+button{cursor:pointer}
 
+/* Top Indian Tricolor Strip */
+.topline{
+  height:5px;
+  background:linear-gradient(90deg,var(--orange) 0 33.3%,#fff 33.3% 66.6%,var(--teal) 66.6% 100%);
+  width:100%;
+}
 
-.performance{grid-template-columns:repeat(2,minmax(0,1fr))}.references-performance-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px;box-shadow:var(--shadow);min-width:0}.references-performance-card h3{margin:0 0 6px;color:var(--navy);font-size:1.02rem}.references-performance-card .record-sub{margin:0 0 10px;font-size:.8rem}.references-performance-card .matter-table-wrap{max-height:260px;overflow:auto}.references-performance-card .matter-table th,.references-performance-card .matter-table td{padding:7px 8px;font-size:.75rem}.references-performance-card .status-pill{font-size:.7rem;padding:4px 6px}.references-performance-card .matter-table td:first-child{width:38%}@media(max-width:620px){.performance{grid-template-columns:1fr}}
+/* Header */
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+.head{
+  max-width:1240px;
+  margin:auto;
+  padding:20px 28px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+.mark{
+  height:54px;
+  width:54px;
+  border-radius:15px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,#e8f4f5,#d4ebea);
+  color:var(--blue);
+  font-size:27px;
+  flex-shrink:0;
+  border:1px solid #c2e2e0;
+  box-shadow:0 4px 12px rgba(18,91,120,.12);
+}
+.head-copy{flex:1;min-width:0}
+.eyebrow{
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  color:var(--teal);
+  font-weight:850;
+  line-height:1.2;
+}
+.head h1{
+  font-size:clamp(1.28rem,2.5vw,1.9rem);
+  line-height:1.22;
+  margin:4px 0;
+  color:var(--navy);
+  letter-spacing:-.025em;
+  font-weight:850;
+}
+.institution{
+  display:inline-block;
+  color:#8a3b00;
+  font-weight:850;
+  background:#fff0df;
+  border:1px solid #ffc078;
+  border-radius:7px;
+  padding:3px 10px;
+  font-size:.84rem;
+  animation:pulse 2.2s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(242,139,45,.4)}
+  70%{box-shadow:0 0 0 7px rgba(242,139,45,0)}
+  100%{box-shadow:0 0 0 0 rgba(242,139,45,0)}
+}
+.head-note{
+  font-size:.84rem;
+  color:var(--muted);
+  margin-top:6px;
+}
+.campaign-meta{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:8px;
+  min-width:140px;
+}
+.campaign-tag{
+  border:1px solid #ffc078;
+  color:#8a3b00;
+  background:#fff0df;
+  border-radius:99px;
+  padding:7px 14px;
+  font-size:.82rem;
+  font-weight:850;
+  white-space:nowrap;
+  animation:pulse 2.2s infinite;
+}
+.campaign-date{
+  font-size:.82rem;
+  font-weight:850;
+  letter-spacing:.03em;
+  color:#087e79;
+  background:#e8fbf8;
+  border:1px solid #9fe6dc;
+  border-radius:8px;
+  padding:5px 12px;
+  white-space:nowrap;
+  animation:tealPulse 2.2s infinite;
+}
+@keyframes tealPulse{
+  0%{box-shadow:0 0 0 0 rgba(19,168,154,.45)}
+  70%{box-shadow:0 0 0 7px rgba(19,168,154,0)}
+  100%{box-shadow:0 0 0 0 rgba(19,168,154,0)}
+}
+
+/* Nav */
+nav{
+  background:var(--navy);
+  color:#e5f0f5;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 10px rgba(12,41,68,.12);
+}
+nav .nav-inner{
+  max-width:1240px;
+  margin:auto;
+  padding:0 28px;
+  display:flex;
+  align-items:center;
+  gap:24px;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+nav .nav-inner::-webkit-scrollbar{display:none}
+nav a{
+  font-size:.84rem;
+  font-weight:700;
+  padding:13px 2px;
+  white-space:nowrap;
+  border-bottom:3px solid transparent;
+  color:#cbdbe6;
+  transition:all .15s ease;
+}
+nav a:hover{
+  border-color:var(--orange);
+  color:#fff;
+}
+nav a.admin-link{
+  margin-left:auto;
+  color:var(--orange-light);
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+}
+nav a.admin-link:hover{
+  color:#fff;
+}
+
+/* Main */
+main{
+  max-width:1240px;
+  margin:auto;
+  padding:25px 28px 45px;
+}
+.section{margin-top:32px}
+.section-heading{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:14px;
+  margin-bottom:15px;
+  flex-wrap:wrap;
+}
+.section-heading h2{
+  margin:0;
+  font-size:1.32rem;
+  letter-spacing:-.02em;
+  color:var(--navy);
+  font-weight:850;
+}
+.section-heading p{
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:.87rem;
+}
+.quiet-link{
+  font-size:.82rem;
+  font-weight:800;
+  color:var(--teal);
+  white-space:nowrap;
+  cursor:pointer;
+  background:transparent;
+  border:0;
+  padding:4px 8px;
+  border-radius:6px;
+  transition:background .15s;
+}
+.quiet-link:hover{
+  background:#edf7f6;
+}
+
+/* Slideshow Showcase */
+.slideshow-wrap{
+  background:linear-gradient(180deg,#eef8f6,#f8fafc);
+  border-bottom:1px solid #d8ece8;
+  padding:22px 28px 26px;
+}
+.slideshow-inner{
+  max-width:1184px;
+  margin:auto;
+}
+.slide-heading{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:15px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+}
+.slide-heading h2{
+  margin:3px 0 0;
+  color:var(--navy);
+  font-size:1.35rem;
+  font-weight:850;
+  letter-spacing:-.02em;
+}
+.slide-heading p{
+  margin:3px 0 0;
+  color:var(--muted);
+  font-size:.86rem;
+}
+.slide-heading a{
+  color:var(--teal);
+  font-weight:800;
+  font-size:.83rem;
+  white-space:nowrap;
+}
+.slide-heading a:hover{
+  text-decoration:underline;
+}
+.slide-kicker{
+  color:var(--teal);
+  font-size:.73rem;
+  font-weight:900;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.slideshow{
+  height:clamp(360px,42vw,560px);
+  position:relative;
+  overflow:hidden;
+  border-radius:16px;
+  background:linear-gradient(120deg,#071d2b,#0f535d);
+  box-shadow:0 12px 30px rgba(12,41,68,.16);
+  border:1px solid rgba(255,255,255,.08);
+  user-select:none;
+}
+.slideshow img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  background:#071d2b;
+  display:block;
+}
+.slide-stage{
+  display:grid;
+  grid-template-columns:minmax(130px,1fr) minmax(0,2.5fr) minmax(130px,1fr);
+  gap:10px;
+  height:100%;
+  align-items:stretch;
+}
+.slide-neighbor{
+  min-width:0;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#0b2639;
+  position:relative;
+  cursor:pointer;
+}
+.slide-neighbor img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  opacity:.72;
+  transition:opacity .2s;
+}
+.slide-neighbor:hover img{
+  opacity:.9;
+}
+.slide-neighbor span{
+  position:absolute;
+  bottom:10px;
+  left:8px;
+  right:8px;
+  text-align:center;
+  color:#fff;
+  font-size:.78rem;
+  font-weight:800;
+  text-shadow:0 1px 4px #000;
+  background:rgba(12,41,68,.85);
+  backdrop-filter:blur(4px);
+  border-radius:6px;
+  padding:5px 8px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.slide-main{
+  min-width:0;
+  position:relative;
+  overflow:hidden;
+  background:#061a27;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.slide-main img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  transition:opacity .25s ease;
+}
+.slide-main:after{
+  content:"";
+  position:absolute;
+  inset:60% 0 0;
+  background:linear-gradient(transparent,rgba(6,28,43,.82));
+  pointer-events:none;
+}
+.slide-placeholder{
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:9px;
+  padding:22px;
+  text-align:center;
+  color:#fff;
+}
+.slide-placeholder strong{font-size:1.15rem}
+.slide-placeholder span{font-size:.84rem;color:#d9f1ed;max-width:560px}
+.placeholder-icon{font-size:2.5rem}
+
+.slide-arrow{
+  position:absolute;
+  z-index:4;
+  top:50%;
+  transform:translateY(-50%);
+  border:1px solid rgba(255,255,255,.3);
+  background:rgba(7,29,43,.65);
+  color:#fff;
+  border-radius:50%;
+  width:44px;
+  height:44px;
+  font-size:1.8rem;
+  line-height:1;
+  display:none;
+  backdrop-filter:blur(6px);
+  transition:all .18s ease;
+}
+.slide-arrow:hover{
+  background:var(--teal);
+  border-color:var(--teal-light);
+  transform:translateY(-50%) scale(1.08);
+}
+.slide-arrow.prev{left:14px}
+.slide-arrow.next{right:14px}
+.slideshow.has-photos .slide-arrow{display:grid;place-items:center}
+
+.slide-caption{
+  position:absolute;
+  z-index:3;
+  left:20px;
+  bottom:18px;
+  color:#fff;
+  font-weight:800;
+  font-size:.95rem;
+  background:rgba(7,29,43,.75);
+  backdrop-filter:blur(8px);
+  padding:6px 14px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,.15);
+  text-shadow:0 1px 3px rgba(0,0,0,.6);
+  max-width:calc(100% - 140px);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.slide-dots{
+  position:absolute;
+  z-index:3;
+  right:20px;
+  bottom:20px;
+  display:flex;
+  gap:7px;
+  align-items:center;
+}
+.slide-dot{
+  border:0;
+  width:8px;
+  height:8px;
+  padding:0;
+  border-radius:99px;
+  background:rgba(255,255,255,.5);
+  transition:all .25s ease;
+}
+.slide-dot.active{
+  width:22px;
+  background:#fff;
+}
+
+/* Performance Cards */
+.performance{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.perf-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:18px 20px;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  transition:all .2s ease;
+}
+.perf-card:hover{
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-hover);
+  border-color:#cbd5e1;
+}
+.perf-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.perf-icon{
+  height:42px;
+  width:42px;
+  border-radius:11px;
+  background:#eff8f7;
+  display:grid;
+  place-items:center;
+  font-size:20px;
+  flex-shrink:0;
+  color:var(--teal);
+  border:1px solid #d6ece8;
+}
+.perf-title h3{
+  margin:0;
+  font-size:.98rem;
+  font-weight:800;
+  color:var(--navy);
+  line-height:1.25;
+}
+.perf-unit{
+  font-size:.76rem;
+  color:var(--muted);
+  font-weight:600;
+}
+.perf-values{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+  margin:15px 0 13px;
+}
+.perf-value{
+  background:#f8fafc;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid var(--line-light);
+}
+.perf-value.daily{
+  background:#fff8ee;
+  border-color:#fed7aa;
+}
+.perf-value.total{
+  background:#edf9f4;
+  border-color:#bbf7d0;
+}
+.perf-value small{
+  display:block;
+  color:var(--muted);
+  font-size:.7rem;
+  font-weight:750;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+}
+.perf-value.daily small{color:#9a4a00}
+.perf-value.total small{color:#0b7042}
+.perf-value b{
+  display:block;
+  font-size:1.12rem;
+  font-weight:850;
+  color:var(--navy);
+  margin-top:3px;
+  overflow-wrap:anywhere;
+  line-height:1.15;
+}
+.perf-value.daily b{color:#8c3e00}
+.perf-value.total b{color:var(--green)}
+
+.bar-head{
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  font-size:.75rem;
+  color:var(--muted);
+  font-weight:700;
+  margin-bottom:6px;
+  margin-top:auto;
+}
+.bar{
+  height:7px;
+  border-radius:99px;
+  background:#e8edf1;
+  overflow:hidden;
+}
+.bar span{
+  height:100%;
+  display:block;
+  background:linear-gradient(90deg,var(--teal),#10b981);
+  border-radius:99px;
+  transition:width .4s ease;
+}
+
+/* References Performance Card */
+.references-performance-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:18px 20px;
+  box-shadow:var(--shadow);
+  min-width:0;
+}
+.references-performance-card h3{
+  margin:0 0 4px;
+  color:var(--navy);
+  font-size:1.05rem;
+  font-weight:850;
+}
+.references-performance-card .record-sub{
+  margin:0 0 12px;
+  font-size:.82rem;
+  color:var(--muted);
+}
+.matter-table-wrap{
+  overflow-x:auto;
+  overflow-y:auto;
+  max-height:280px;
+  margin-top:10px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  -webkit-overflow-scrolling:touch;
+}
+.matter-table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  font-size:.84rem;
+}
+.matter-table th{
+  background:#f1f7f6;
+  color:var(--navy);
+  text-align:left;
+  font-weight:800;
+  padding:9px 12px;
+  border-bottom:1px solid var(--line);
+  font-size:.78rem;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+.matter-table td{
+  padding:9px 12px;
+  border-bottom:1px solid #edf2f7;
+  vertical-align:middle;
+}
+.matter-table tr:last-child td{border-bottom:none}
+.matter-table td:first-child{
+  font-weight:750;
+  color:var(--navy);
+  width:42%;
+}
+.status-pill{
+  display:inline-block;
+  color:#0e694f;
+  background:#eef9f4;
+  border:1px solid #c2ebda;
+  border-radius:99px;
+  padding:4px 9px;
+  font-size:.74rem;
+  font-weight:750;
+}
+
+/* Record Management */
+.record-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.record-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:18px 20px;
+  box-shadow:var(--shadow);
+}
+.record-card h3{
+  font-size:1.02rem;
+  font-weight:850;
+  margin:0;
+  color:var(--navy);
+}
+.record-sub{
+  font-size:.8rem;
+  color:var(--muted);
+  margin:3px 0 14px;
+  font-weight:600;
+}
+.record-row{
+  padding:9px 0;
+  border-top:1px solid #edf2f7;
+}
+.record-row-head{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+}
+.record-row strong{
+  font-size:.85rem;
+  color:var(--ink);
+}
+.record-row span{
+  font-size:.79rem;
+  color:var(--muted);
+  text-align:right;
+  font-weight:750;
+}
+
+/* Footer */
+footer{
+  background:var(--navy-dark);
+  color:#cbdbe6;
+  padding:26px 28px;
+  margin-top:36px;
+  border-top:1px solid #143555;
+}
+footer .inner{
+  max-width:1240px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+  font-size:.82rem;
+  align-items:center;
+}
+footer strong{color:#fff}
+
+/* Modal */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(7,29,43,.85);
+  backdrop-filter:blur(6px);
+  z-index:20;
+  display:none;
+  overflow:auto;
+  padding:18px;
+}
+.modal.open{display:flex;align-items:center;justify-content:center}
+.modal-box{
+  max-width:680px;
+  width:100%;
+  margin:auto;
+  background:#fff;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 16px 40px rgba(0,0,0,.25);
+}
+.modal-head{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+}
+.modal h2{margin:0;color:var(--navy);font-size:1.2rem}
+.modal-content{color:#475569;font-size:.9rem}
+
+/* Mobile Optimizations */
+@media(max-width:900px){
+  .performance{grid-template-columns:1fr}
+  .record-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .slide-stage{grid-template-columns:minmax(0,1fr);gap:0}
+  .slide-neighbor{display:none}
+  .slide-main{height:100%}
+}
+@media(max-width:620px){
+  .head{
+    padding:16px;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .mark{width:46px;height:46px;font-size:24px}
+  .head h1{font-size:1.3rem}
+  .campaign-meta{
+    align-items:flex-start;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:8px;
+    min-width:0;
+    width:100%;
+    margin-top:2px;
+  }
+  .campaign-tag{display:inline-block;padding:5px 11px;font-size:.78rem}
+  .campaign-date{font-size:.76rem;padding:4px 10px}
+  nav .nav-inner{padding:0 16px;gap:18px}
+  main{padding:18px 14px 34px}
+  .slideshow-wrap{padding:16px 14px}
+  .slide-heading{align-items:flex-start;flex-direction:column;gap:6px}
+  .slideshow{height:clamp(300px,68vw,440px)}
+  .slide-caption{left:12px;bottom:12px;max-width:calc(100% - 100px);font-size:.85rem;padding:5px 10px}
+  .slide-dots{right:12px;bottom:14px}
+  .slide-arrow{width:38px;height:38px;font-size:1.5rem}
+  .slide-arrow.prev{left:8px}
+  .slide-arrow.next{right:8px}
+  .perf-card{padding:14px 15px}
+  .perf-values{gap:6px}
+  .perf-value{padding:8px 6px}
+  .perf-value small{font-size:.66rem}
+  .perf-value b{font-size:.95rem}
+  .matter-table{min-width:440px}
+  footer{padding:20px 16px}
+}
 </style>
 </head>
 <body>
 <div class="topline"></div>
-<header><div class="head"><div class="mark">✦</div><div class="head-copy"><div class="eyebrow">Government of India · Ministry of Labour and Employment · Directorate General of Occupational Safety and Health</div><div class="head-note">Special Campaign for Disposal of Pending Matters (SCDPM), 6.0 edition · 2026</div><h1>Today&#39;s Performance &amp; Initiatives</h1><div><span class="institution">Regional Labour Institute, Kolkata</span></div><div class="head-note">Clean administration. Measurable progress. Practices worth sharing.</div></div><div class="campaign-meta"><div class="campaign-tag">SCDPM 6 · 2026</div><div class="campaign-date" id="campaign-date">21 October 2026</div></div></div></header>
-<nav><div class="nav-inner"><a href="#overview">Overview</a><a href="#performance">Campaign Performance</a><a href="#records">Record Management</a></div></nav>
+<header>
+  <div class="head">
+    <div class="mark">✦</div>
+    <div class="head-copy">
+      <div class="eyebrow">Government of India · Ministry of Labour and Employment · Directorate General of Occupational Safety and Health</div>
+      <div class="head-note">Special Campaign for Disposal of Pending Matters (SCDPM), 6.0 edition · 2026</div>
+      <h1>Today's Performance &amp; Initiatives</h1>
+      <div><span class="institution">Regional Labour Institute, Kolkata</span></div>
+      <div class="head-note">Clean administration. Measurable progress. Practices worth sharing.</div>
+    </div>
+    <div class="campaign-meta">
+      <div class="campaign-tag">SCDPM 6 · 2026</div>
+      <div class="campaign-date" id="campaign-date">21 October 2026</div>
+    </div>
+  </div>
+</header>
+<nav>
+  <div class="nav-inner">
+    <a href="#overview">Overview</a>
+    <a href="#performance">Campaign Performance</a>
+    <a href="#records">Record Management</a>
+    <a href="#swachhata">Swachhata Hi Seva</a>
+    <a href="admin-entry.html" class="admin-link">⚙ Update Data ↗</a>
+  </div>
+</nav>
 <section class="slideshow-wrap" aria-label="Swachhata Hi Seva campaign photo slideshow">
 <div class="slideshow-inner">
-<div class="slide-heading"><div><span class="slide-kicker">Special Campaign for Disposal of Pending Matters (SCDPM), 6.0 edition · 2026</span><h2>Swachhata Hi Seva in Action</h2><p>Campaign moments from Regional Labour Institute, Kolkata</p></div><a href="gallery/index.html">View full gallery ↗</a></div>
-<div class="slideshow" id="top-slideshow"><div class="slide-stage"><div class="slide-neighbor" id="slide-before"></div><div class="slide-main" id="slide-main"><div class="slide-placeholder"><div class="placeholder-icon">📸</div><strong>Swachhata Hi Seva 2026 — Campaign Gallery</strong><span>Campaign photographs from Regional Labour Institute, Kolkata.</span></div><div class="slide-caption" id="slide-caption">Swachhata Hi Seva 2026 · RLI Kolkata</div><div class="slide-dots" id="slide-dots"></div></div><div class="slide-neighbor" id="slide-after"></div></div><button class="slide-arrow prev" id="slide-prev" aria-label="Previous photograph">‹</button><button class="slide-arrow next" id="slide-next" aria-label="Next photograph">›</button></div>
-</div></section>
+<div class="slide-heading">
+  <div>
+    <span class="slide-kicker">Special Campaign for Disposal of Pending Matters (SCDPM), 6.0 edition · 2026</span>
+    <h2>Swachhata Hi Seva in Action</h2>
+    <p>Campaign moments from Regional Labour Institute, Kolkata</p>
+  </div>
+  <a href="gallery/index.html">View full gallery ↗</a>
+</div>
+<div class="slideshow" id="top-slideshow">
+  <div class="slide-stage">
+    <div class="slide-neighbor" id="slide-before"></div>
+    <div class="slide-main" id="slide-main">
+      <div class="slide-placeholder">
+        <div class="placeholder-icon">📸</div>
+        <strong>Swachhata Hi Seva 2026 — Campaign Gallery</strong>
+        <span>Campaign photographs from Regional Labour Institute, Kolkata.</span>
+      </div>
+      <div class="slide-caption" id="slide-caption">Swachhata Hi Seva 2026 · RLI Kolkata</div>
+      <div class="slide-dots" id="slide-dots"></div>
+    </div>
+    <div class="slide-neighbor" id="slide-after"></div>
+  </div>
+  <button class="slide-arrow prev" id="slide-prev" aria-label="Previous photograph">‹</button>
+  <button class="slide-arrow next" id="slide-next" aria-label="Next photograph">›</button>
+</div>
+</div>
+</section>
+
 <main id="overview">
 
+<section class="section" id="performance">
+  <div class="section-heading">
+    <div>
+      <h2 id="performance-heading">Today's Performance (21 October 2026)</h2>
+      <p>Target, today's achievement and cumulative progress for <span id="performance-date">21 October 2026</span>.</p>
+    </div>
+    <span class="quiet-link" id="performance-status" title="Click to toggle data source">Loading report…</span>
+  </div>
+  <div class="performance" id="performance-grid"></div>
+</section>
 
-<section class="section" id="performance"><div class="section-heading"><div><h2 id="performance-heading">Today&#39;s Performance (21 October 2026)</h2><p>Target, today&#39;s achievement and cumulative progress for <span id="performance-date">21 October 2026</span>.</p></div><span class="quiet-link" id="performance-status">Loading published report…</span></div><div class="performance" id="performance-grid"></div></section>
+<section class="section" id="records">
+  <div class="section-heading">
+    <div>
+      <h2>Record Management</h2>
+      <p>Physical file and e-File progress at a glance.</p>
+    </div>
+  </div>
+  <div class="record-grid" id="records-grid"></div>
+</section>
 
-</div>
-
-<section class="section" id="records"><div class="section-heading"><div><h2>Record Management</h2><p>Physical file and e-File progress at a glance.</p></div></div><div class="record-grid" id="records-grid"></div></section>
-
-<section class="section" id="swachhata"><div class="section-heading"><div><h2>Swachhata Hi Seva 2026</h2><p>Campaign period: 17 September–2 October 2026 · Regional Labour Institute, Kolkata</p></div><a class="quiet-link" href="https://swachhatahiseva.gov.in/" target="_blank" rel="noopener">Official campaign portal ↗</a></div><div class="record-grid"><article class="record-card"><h3>Clean premises and responsible disposal</h3><div class="record-sub">Cleanliness, space optimisation and waste management</div><p>Intensive cleaning covered approximately <strong>10,000 sq. ft.</strong> of premises. Scrap and obsolete condemned items were segregated for disposal, generating <strong>more than ₹50,000</strong> in revenue. Activities also included cleaning against mosquito breeding and awareness on avoiding single-use plastics.</p></article><article class="record-card"><h3>Participation and community action</h3><div class="record-sub">Jan Bhagidari and workplace ownership</div><p><strong>38 Cleanliness Target Units (CTUs)</strong> were completed, alongside intensive cleaning at <strong>4 additional public places</strong>. Officers, staff, students and programme participants contributed more than <strong>350 man-hours</strong>. Activities included the Swachhata pledge, “Ek Din Ek Ghanta Ek Saath”, “Ek Ped Maa Ke Naam”, and a Safai Mitra health check-up and facilitation programme with the local municipality.</p></article></div></section>
-
-
-
-
-
-
+<section class="section" id="swachhata">
+  <div class="section-heading">
+    <div>
+      <h2>Swachhata Hi Seva 2026</h2>
+      <p>Campaign period: 17 September–2 October 2026 · Regional Labour Institute, Kolkata</p>
+    </div>
+    <a class="quiet-link" href="https://swachhatahiseva.gov.in/" target="_blank" rel="noopener">Official campaign portal ↗</a>
+  </div>
+  <div class="record-grid">
+    <article class="record-card">
+      <h3>Clean premises and responsible disposal</h3>
+      <div class="record-sub">Cleanliness, space optimisation and waste management</div>
+      <p>Intensive cleaning covered approximately <strong>10,000 sq. ft.</strong> of premises. Scrap and obsolete condemned items were segregated for disposal, generating <strong>more than ₹50,000</strong> in revenue. Activities also included cleaning against mosquito breeding and awareness on avoiding single-use plastics.</p>
+    </article>
+    <article class="record-card">
+      <h3>Participation and community action</h3>
+      <div class="record-sub">Jan Bhagidari and workplace ownership</div>
+      <p><strong>38 Cleanliness Target Units (CTUs)</strong> were completed, alongside intensive cleaning at <strong>4 additional public places</strong>. Officers, staff, students and programme participants contributed more than <strong>350 man-hours</strong>. Activities included the Swachhata pledge, “Ek Din Ek Ghanta Ek Saath”, “Ek Ped Maa Ke Naam”, and a Safai Mitra health check-up and facilitation programme with the local municipality.</p>
+    </article>
+  </div>
+</section>
 
 </main>
-<footer><div class="inner"><div><strong>Special Campaign 6.0 · Regional Labour Institute, Kolkata</strong><br>Today's Performance &amp; Initiatives</div><div><a href="https://swachhatahiseva.gov.in/" target="_blank" rel="noopener" style="color:#9ee8df">Official Swachhata Hi Seva portal ↗</a></div></div></footer>
-<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-box"><div class="modal-head"><h2 id="modal-title"></h2><button class="btn btn-light" id="close-modal">Close ✕</button></div><div class="modal-content" id="modal-content"></div></div></div>
+<footer>
+  <div class="inner">
+    <div>
+      <strong>Special Campaign 6.0 · Regional Labour Institute, Kolkata</strong><br>
+      Today's Performance &amp; Initiatives
+    </div>
+    <div>
+      <a href="https://swachhatahiseva.gov.in/" target="_blank" rel="noopener" style="color:#9ee8df">Official Swachhata Hi Seva portal ↗</a>
+    </div>
+  </div>
+</footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h2 id="modal-title"></h2>
+      <button class="btn btn-light" id="close-modal">Close ✕</button>
+    </div>
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+</div>
+
 <script>
-let performanceData=[
- {label:"Cleanliness campaigns conducted",unit:"campaigns",icon:"🧹",target:20,daily:0,cumulative:45},
- {label:"Revenue from scrap disposal",unit:"₹",icon:"₹",target:40000,daily:null,cumulative:52000,currency:true},
- {label:"Space freed",unit:"sq. ft.",icon:"▧",target:3000,daily:0,cumulative:11000},
- {label:"Physical files reviewed",unit:"files",icon:"▤",target:50,daily:0,cumulative:48},
- {label:"e-Files reviewed",unit:"e-files",icon:"▣",target:20,daily:0,cumulative:25}
+// Baseline indicators - exactly matched with performance-update.json
+let performanceData = [
+  {label:"Cleanliness campaigns conducted",unit:"campaigns",icon:"🧹",target:20,daily:5,cumulative:50},
+  {label:"Revenue from scrap disposal",unit:"₹",icon:"₹",target:40000,daily:null,cumulative:52000,currency:true},
+  {label:"Space freed",unit:"sq. ft.",icon:"▧",target:3000,daily:500,cumulative:11500},
+  {label:"Physical files reviewed",unit:"files",icon:"▤",target:50,daily:2,cumulative:50},
+  {label:"e-Files reviewed",unit:"e-files",icon:"▣",target:20,daily:2,cumulative:27}
 ];
 let performanceReportDate = new Date().toLocaleDateString("en-CA");
 let performanceReportSource = "fallback";
-let referenceStatuses = {};
-let recordData=[
- {title:"Record Management (Physical Files)",subtitle:"Physical Files (Total Target: )",rows:[["Reviewed",2,50],["To be transferred to NAI",null,"NA"],["Identified for weeding",1,25],["Weeded",1,25]]},
- {title:"Record Management (e-Files)",subtitle:"e-Files (Total Target: 25)",rows:[["Reviewed",2,27],["Closed",0,0]]}
+let publishedCache = null;
+let referenceStatuses = {
+  "References from MPs": "Nil / N.A.",
+  "Parliamentary Assurances": "Nil / N.A.",
+  "IMC References (Cabinet Proposals)": "Nil / N.A.",
+  "State Government References": "Nil / N.A.",
+  "Public Grievances": "Disposed (100%)",
+  "PMO References": "Nil / N.A.",
+  "Public Grievances Appeals": "Disposed (100%)",
+  "Easing of Rules / Processes": "Implemented"
+};
+let recordData = [
+  {
+    title: "Record Management (Physical Files)",
+    subtitle: "Physical Files (Total Target: 50)",
+    rows: [
+      ["Reviewed", 2, 50],
+      ["To be transferred to NAI", null, "NA"],
+      ["Identified for weeding", 1, 25],
+      ["Weeded", 1, 25]
+    ]
+  },
+  {
+    title: "Record Management (e-Files)",
+    subtitle: "e-Files (Total Target: 20)",
+    rows: [
+      ["Reviewed", 2, 27],
+      ["Closed", 0, 0]
+    ]
+  }
 ];
-const $=id=>document.getElementById(id);
-const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const fmt=(v,c=false)=>v===null||v===undefined||v==="N/A"?"—":(c?"₹":"")+Number(v).toLocaleString("en-IN");
-const sharedKey="scdpm6DashboardUpdate";
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = (v, c = false) => (v === null || v === undefined || v === "" || v === "N/A" || v === "NA") ? "—" : (c ? "₹" : "") + Number(v).toLocaleString("en-IN");
+const sharedKey = "scdpm6DashboardUpdate";
+const BROADCAST_NAME = "scdpm6_channel";
 
 function formatReportDate(value){
   if(!value || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"});
   return new Date(value+"T12:00:00").toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"});
 }
+
 function renderPerformance(){
-  const grid=$("performance-grid");
+  const grid = $("performance-grid");
   if(!grid) return;
-  grid.innerHTML=performanceData.map(x=>{
-    const pct=x.target>0?Math.min(100,Math.round(Number(x.cumulative||0)/Number(x.target)*100)):0;
-    return `<article class="perf-card"><div class="perf-title"><div class="perf-icon">${esc(x.icon)}</div><div><h3>${esc(x.label)}</h3><div class="perf-unit">${esc(x.unit||"")}</div></div></div><div class="perf-values"><div class="perf-value"><small>🎯 Target</small><b>${fmt(x.target,x.currency)}</b></div><div class="perf-value daily"><small>☀ Today</small><b>${fmt(x.daily,x.currency)}</b></div><div class="perf-value total"><small>Σ Cumulative</small><b>${fmt(x.cumulative,x.currency)}</b></div></div><div class="bar-head"><span>Cumulative vs target</span><strong>${pct}%</strong></div><div class="bar"><span style="width:${pct}%"></span></div></article>`;
-  }).join("")+`<article class="references-performance-card"><h3>References, Assurances &amp; Process Reforms</h3><p class="record-sub">Nil / N.A. where none were received; matters received were effectively disposed of during the period.</p><div class="matter-table-wrap"><table class="matter-table"><thead><tr><th>Activity</th><th>Reporting status</th></tr></thead><tbody>${["References from MPs","Parliamentary Assurances","IMC References (Cabinet Proposals)","State Government References","Public Grievances","PMO References","Public Grievances Appeals","Easing of Rules / Processes"].map(label=>`<tr><td>${esc(label)}</td><td><span class="status-pill">${esc(referenceStatuses[label]||"Nil / N.A.; any matter received was effectively disposed of during the period")}</span></td></tr>`).join("")}</tbody></table></div></article>`;
-  const formatted=formatReportDate(performanceReportDate);
-  const hd=$("campaign-date"); if(hd) hd.textContent=formatted;
-  const pd=$("performance-date"); if(pd) pd.textContent=formatted;
-  const ph=$("performance-heading"); if(ph) ph.textContent="Today's Performance ("+formatted+") & Cumulative Performance";
-  const st=$("performance-status");
-  if(st) st.textContent=performanceReportSource==="json" ? "Published report loaded · "+formatted : performanceReportSource==="local" ? "Local browser override · "+formatted : "JSON unavailable — check data/performance-update.json";
+  grid.innerHTML = performanceData.map(x => {
+    const realPct = x.target > 0 ? Math.round(Number(x.cumulative || 0) / Number(x.target) * 100) : 0;
+    const barWidth = Math.min(100, realPct);
+    return `<article class="perf-card">
+      <div class="perf-title">
+        <div class="perf-icon">${esc(x.icon)}</div>
+        <div>
+          <h3>${esc(x.label)}</h3>
+          <div class="perf-unit">${esc(x.unit || "")}</div>
+        </div>
+      </div>
+      <div class="perf-values">
+        <div class="perf-value"><small>🎯 Target</small><b>${fmt(x.target, x.currency)}</b></div>
+        <div class="perf-value daily"><small>☀ Today</small><b>${fmt(x.daily, x.currency)}</b></div>
+        <div class="perf-value total"><small>Σ Cumulative</small><b>${fmt(x.cumulative, x.currency)}</b></div>
+      </div>
+      <div class="bar-head"><span>Cumulative vs target</span><strong>${realPct}%</strong></div>
+      <div class="bar"><span style="width:${barWidth}%"></span></div>
+    </article>`;
+  }).join("") + `
+    <article class="references-performance-card">
+      <h3>References, Assurances &amp; Process Reforms</h3>
+      <p class="record-sub">Nil / N.A. where none were received; matters received were effectively disposed of during the period.</p>
+      <div class="matter-table-wrap">
+        <table class="matter-table">
+          <thead>
+            <tr><th>Activity</th><th>Reporting status</th></tr>
+          </thead>
+          <tbody>
+            ${["References from MPs","Parliamentary Assurances","IMC References (Cabinet Proposals)","State Government References","Public Grievances","PMO References","Public Grievances Appeals","Easing of Rules / Processes"].map(label => `
+              <tr>
+                <td>${esc(label)}</td>
+                <td><span class="status-pill">${esc(referenceStatuses[label] || "Nil / N.A.; effectively disposed of during the period")}</span></td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+    </article>
+  `;
+
+  const formatted = formatReportDate(performanceReportDate);
+  const hd = $("campaign-date"); if(hd) hd.textContent = formatted;
+  const pd = $("performance-date"); if(pd) pd.textContent = formatted;
+  const ph = $("performance-heading"); if(ph) ph.textContent = "Today's Performance (" + formatted + ") & Cumulative Progress";
+  
+  const st = $("performance-status");
+  if(st){
+    if(performanceReportSource === "local"){
+      st.innerHTML = `🟢 <strong>Admin Sync Active</strong> · ${formatted} <span style="text-decoration:underline; font-size:.75rem;">(click to use published JSON)</span>`;
+    } else if(performanceReportSource === "json"){
+      st.innerHTML = `🌐 <strong>Published Report</strong> · ${formatted} <span style="text-decoration:underline; font-size:.75rem;">(click to toggle)</span>`;
+    } else {
+      st.textContent = `Report loaded · ${formatted}`;
+    }
+  }
 }
+
 function renderRecords(){
-  const grid=$("records-grid");
+  const grid = $("records-grid");
   if(!grid) return;
-  const reportDate=formatReportDate(performanceReportDate);
-  grid.innerHTML=recordData.map(g=>`<article class="record-card"><h3>${esc(g.title)}</h3><div class="record-sub"><strong>${esc(g.subtitle)}</strong></div><div class="record-row record-row-head"><strong>Activity</strong><span><strong>Today's Achievement (Date: ${esc(reportDate)})</strong> &nbsp;·&nbsp; <strong>Cumulative/Total Progress</strong></span></div>${g.rows.map(r=>`<div class="record-row"><div class="record-row-head"><strong>${esc(r[0])}</strong><span>${fmt(r[1])} &nbsp;·&nbsp; ${fmt(r[2])}</span></div></div>`).join("")}</article>`).join("");
+  const reportDate = formatReportDate(performanceReportDate);
+  grid.innerHTML = recordData.map(g => `
+    <article class="record-card">
+      <h3>${esc(g.title)}</h3>
+      <div class="record-sub"><strong>${esc(g.subtitle)}</strong></div>
+      <div class="record-row record-row-head">
+        <strong>Activity</strong>
+        <span><strong>Today's Achievement (${esc(reportDate)})</strong> &nbsp;·&nbsp; <strong>Cumulative Progress</strong></span>
+      </div>
+      ${g.rows.map(r => `
+        <div class="record-row">
+          <div class="record-row-head">
+            <strong>${esc(r[0])}</strong>
+            <span>${fmt(r[1])} &nbsp;·&nbsp; ${fmt(r[2])}</span>
+          </div>
+        </div>
+      `).join("")}
+    </article>
+  `).join("");
 }
-async function loadPerformanceReport(){
-  const status=$("performance-status");
-  if(status) status.textContent="Loading published report…";
-  try{
-    const response=await fetch(new URL("data/performance-update.json", document.baseURI).href+"?v="+Date.now(),{cache:"no-store"});
-    if(!response.ok) throw new Error("HTTP "+response.status);
-    const report=await response.json();
-    if(!report || !Array.isArray(report.performanceData)) throw new Error("JSON must contain a performanceData array");
-    performanceData=report.performanceData.map((item,i)=>({...((performanceData[i])||{}),...item}));
-    if(report.lastUpdated) performanceReportDate=report.lastUpdated;
-    if(report.referenceStatuses && typeof report.referenceStatuses==="object") referenceStatuses=report.referenceStatuses;
-    performanceReportSource="json";
-  }catch(err){
-    console.error("Unable to load published performance JSON:",err);
-    if(status) status.textContent="Could not load report ("+err.message+"). Check that data/performance-update.json exists in the published GitHub Pages branch.";
+
+// Apply a data object (from JSON or localStorage)
+function applyReportData(data, source){
+  if(!data || !Array.isArray(data.performanceData)) return;
+  
+  performanceData = data.performanceData.map((item, i) => ({
+    ...(performanceData[i] || {}),
+    ...item
+  }));
+
+  if(data.lastUpdated) performanceReportDate = data.lastUpdated;
+  
+  if(Array.isArray(data.recordData)) {
+    recordData = data.recordData;
   }
-  // Use local browser values only if the published JSON could not be loaded.
-  // A valid published JSON report must take precedence over stale localStorage values.
-  if(performanceReportSource!=="json"){
-    try{
-      const saved=JSON.parse(localStorage.getItem(sharedKey)||"null");
-      if(saved && Array.isArray(saved.performanceData)){
-        performanceData=performanceData.map((item,i)=>({...item,...(saved.performanceData[i]||{})}));
-        if(saved.lastUpdated) performanceReportDate=saved.lastUpdated;
-        if(Array.isArray(saved.recordData)) recordData=saved.recordData;
-        referenceStatuses=saved.referenceStatuses||referenceStatuses;
-        performanceReportSource="local";
-      }
-    }catch(e){}
+  
+  // Guarantee consistency between performanceData and recordData
+  // Physical Files Reviewed (Indicator 3)
+  if(performanceData[3] && recordData[0] && Array.isArray(recordData[0].rows)){
+    recordData[0].subtitle = "Physical Files (Total Target: " + (performanceData[3].target ?? 50) + ")";
+    if(recordData[0].rows[0]){
+      recordData[0].rows[0][0] = "Reviewed";
+      recordData[0].rows[0][1] = performanceData[3].daily;
+      recordData[0].rows[0][2] = performanceData[3].cumulative;
+    }
   }
+  // e-Files Reviewed (Indicator 4)
+  if(performanceData[4] && recordData[1] && Array.isArray(recordData[1].rows)){
+    recordData[1].subtitle = "e-Files (Total Target: " + (performanceData[4].target ?? 20) + ")";
+    if(recordData[1].rows[0]){
+      recordData[1].rows[0][0] = "Reviewed";
+      recordData[1].rows[0][1] = performanceData[4].daily;
+      recordData[1].rows[0][2] = performanceData[4].cumulative;
+    }
+  }
+
+  if(data.referenceStatuses && typeof data.referenceStatuses === "object"){
+    referenceStatuses = { ...referenceStatuses, ...data.referenceStatuses };
+  }
+  
+  performanceReportSource = source;
   renderPerformance();
   renderRecords();
 }
+
+async function loadPerformanceReport(){
+  const status = $("performance-status");
+  if(status) status.textContent = "Loading report…";
+
+  // 1. Fetch published JSON
+  let publishedData = null;
+  try{
+    const response = await fetch(new URL("data/performance-update.json", document.baseURI).href + "?v=" + Date.now(), {cache:"no-store"});
+    if(response.ok){
+      publishedData = await response.json();
+      publishedCache = publishedData;
+    }
+  }catch(err){
+    console.warn("Published JSON fetch warning:", err);
+  }
+
+  // 2. Check local browser storage from admin-entry
+  let localSaved = null;
+  try{
+    const raw = localStorage.getItem(sharedKey);
+    if(raw) localSaved = JSON.parse(raw);
+  }catch(e){}
+
+  // 3. Priority: local browser edits from entry form take precedence, else published JSON
+  if(localSaved && Array.isArray(localSaved.performanceData)){
+    applyReportData(localSaved, "local");
+  } else if(publishedData){
+    applyReportData(publishedData, "json");
+  } else {
+    // Standard baseline
+    applyReportData({ performanceData, recordData, referenceStatuses, lastUpdated: performanceReportDate }, "fallback");
+  }
+}
+
+// Toggle between local override and published file
+function toggleDataSource(){
+  if(performanceReportSource === "local"){
+    if(publishedCache){
+      applyReportData(publishedCache, "json");
+    } else {
+      fetch(new URL("data/performance-update.json", document.baseURI).href + "?v=" + Date.now(), {cache:"no-store"})
+        .then(r => r.json())
+        .then(d => { publishedCache = d; applyReportData(d, "json"); })
+        .catch(e => alert("Published JSON unavailable: " + e.message));
+    }
+  } else {
+    try{
+      const raw = localStorage.getItem(sharedKey);
+      if(raw){
+        applyReportData(JSON.parse(raw), "local");
+      } else {
+        alert("No saved updates found in this browser. Use admin-entry.html to update figures.");
+      }
+    }catch(e){}
+  }
+}
+
+$("performance-status")?.addEventListener("click", toggleDataSource);
+
+// Listen to BroadcastChannel for real-time live sync across tabs
+try{
+  const channel = new BroadcastChannel(BROADCAST_NAME);
+  channel.onmessage = e => {
+    if(e.data && e.data.type === "UPDATE" && e.data.data){
+      applyReportData(e.data.data, "local");
+    }
+  };
+}catch(e){}
+
+// Also listen to storage events
+window.addEventListener("storage", e => {
+  if(e.key === sharedKey && e.newValue){
+    try{
+      applyReportData(JSON.parse(e.newValue), "local");
+    }catch(err){}
+  }
+});
+
 loadPerformanceReport();
-</script><script>
+</script>
+
+<script>
+// 3-Stage Carousel & Touch Support
 (function(){
- const host=document.getElementById('top-slideshow'); if(!host)return;
- const main=document.getElementById('slide-main'),before=document.getElementById('slide-before'),after=document.getElementById('slide-after');
- const caption=document.getElementById('slide-caption'),dots=document.getElementById('slide-dots');
- const photos=[{"file": "Swachhata_Hi_Seva_2026_Poster_1.png", "caption": "Swachhata Hi Seva 2026 — Campaign Image 1"}, {"file": "Swachhata_Hi_Seva_2026_Poster_2.png", "caption": "Swachhata Hi Seva 2026 — Campaign Image 2"}, {"file": "Swachhata_Hi_Seva_2026_Poster_3.png", "caption": "Swachhata Hi Seva 2026 — Campaign Image 3"}, {"file": "Swachhata_Hi_Seva_2026_Poster_4.png", "caption": "Swachhata Hi Seva 2026 — Campaign Image 4"}, {"file": "Swachhata_Hi_Seva_2026_Poster_5.png", "caption": "Swachhata Hi Seva 2026 — Campaign Image 5"}, {"file": "Swachhata_Hi_Seva_2026_Poster_6.png", "caption": "Swachhata Hi Seva 2026 — Campaign Image 6"}]; let index=0,timer=null;
- function neighbor(el,idx,label){el.innerHTML='';if(!photos.length)return;const p=photos[(idx+photos.length)%photos.length];const im=document.createElement('img');im.src='gallery/images/'+p.file;im.alt='';el.appendChild(im);const tag=document.createElement('span');tag.textContent=label+': '+(p.caption||'Campaign photo');el.appendChild(tag);}
- function render(){if(!photos.length)return;host.classList.add('has-photos');const placeholder=main.querySelector('.slide-placeholder');if(placeholder)placeholder.remove();const old=main.querySelector('img');if(old)old.remove();const p=photos[index],img=document.createElement('img');img.src='gallery/images/'+p.file;img.alt=p.caption||'Swachhata Hi Seva campaign photograph';img.loading='eager';img.onerror=function(){caption.textContent='Image could not be loaded: '+p.file;};main.insertBefore(img,caption);caption.textContent=(p.date?p.date+' · ':'')+(p.caption||'Swachhata Hi Seva 2026');neighbor(before,index-1,'Previous');neighbor(after,index+1,'Next');dots.innerHTML=photos.map((_,i)=>'<button class="slide-dot '+(i===index?'active':'')+'" aria-label="Show photograph '+(i+1)+'" data-i="'+i+'"></button>').join('');dots.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{index=Number(b.dataset.i);render();restart();}));}
- function restart(){if(timer)clearInterval(timer);if(photos.length>1)timer=setInterval(()=>{index=(index+1)%photos.length;render();},5000);}
- document.getElementById('slide-prev').addEventListener('click',()=>{index=(index-1+photos.length)%photos.length;render();restart();});
- document.getElementById('slide-next').addEventListener('click',()=>{index=(index+1)%photos.length;render();restart();});
- render();restart();
+  const host = document.getElementById('top-slideshow');
+  if(!host) return;
+  const main = document.getElementById('slide-main');
+  const before = document.getElementById('slide-before');
+  const after = document.getElementById('slide-after');
+  const caption = document.getElementById('slide-caption');
+  const dots = document.getElementById('slide-dots');
+
+  const photos = [
+    {"file": "Swachhata_Hi_Seva_2026_Poster_1.png", "caption": "Swachhata Hi Seva 2026 — Cleanliness Drive & Premises Upkeep"},
+    {"file": "Swachhata_Hi_Seva_2026_Poster_2.png", "caption": "Swachhata Hi Seva 2026 — Waste Segregation & Space Reclamation"},
+    {"file": "Swachhata_Hi_Seva_2026_Poster_3.png", "caption": "Swachhata Hi Seva 2026 — Jan Bhagidari & Public Outreach"},
+    {"file": "Swachhata_Hi_Seva_2026_Poster_4.png", "caption": "Swachhata Hi Seva 2026 — Ek Ped Maa Ke Naam Plantation"},
+    {"file": "Swachhata_Hi_Seva_2026_Poster_5.png", "caption": "Swachhata Hi Seva 2026 — Safai Mitra Suraksha Shivir & Health Check-up"},
+    {"file": "Swachhata_Hi_Seva_2026_Poster_6.png", "caption": "Swachhata Hi Seva 2026 — Scrap Disposal & Workplace Transformation"}
+  ];
+  let index = 0, timer = null;
+
+  function neighbor(el, idx, label){
+    if(!el) return;
+    el.innerHTML = '';
+    if(!photos.length) return;
+    const p = photos[(idx + photos.length) % photos.length];
+    const im = document.createElement('img');
+    im.src = 'gallery/images/' + p.file;
+    im.alt = '';
+    el.appendChild(im);
+    const tag = document.createElement('span');
+    tag.textContent = label + ': ' + (p.caption || 'Campaign photo');
+    el.appendChild(tag);
+    el.onclick = () => {
+      index = (idx + photos.length) % photos.length;
+      render();
+      restart();
+    };
+  }
+
+  function render(){
+    if(!photos.length) return;
+    host.classList.add('has-photos');
+    const placeholder = main.querySelector('.slide-placeholder');
+    if(placeholder) placeholder.remove();
+    const old = main.querySelector('img');
+    if(old) old.remove();
+
+    const p = photos[index];
+    const img = document.createElement('img');
+    img.src = 'gallery/images/' + p.file;
+    img.alt = p.caption || 'Swachhata Hi Seva campaign photograph';
+    img.loading = 'eager';
+    img.onerror = function(){ caption.textContent = 'Image could not be loaded: ' + p.file; };
+    main.insertBefore(img, caption);
+
+    caption.textContent = p.caption || 'Swachhata Hi Seva 2026';
+    neighbor(before, index - 1, '‹ Prev');
+    neighbor(after, index + 1, 'Next ›');
+
+    dots.innerHTML = photos.map((_, i) =>
+      `<button class="slide-dot ${i === index ? 'active' : ''}" aria-label="Show photograph ${i + 1}" data-i="${i}"></button>`
+    ).join('');
+
+    dots.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+      index = Number(b.dataset.i);
+      render();
+      restart();
+    }));
+  }
+
+  function restart(){
+    if(timer) clearInterval(timer);
+    if(photos.length > 1) {
+      timer = setInterval(() => {
+        index = (index + 1) % photos.length;
+        render();
+      }, 5500);
+    }
+  }
+
+  document.getElementById('slide-prev')?.addEventListener('click', () => {
+    index = (index - 1 + photos.length) % photos.length;
+    render();
+    restart();
+  });
+  document.getElementById('slide-next')?.addEventListener('click', () => {
+    index = (index + 1) % photos.length;
+    render();
+    restart();
+  });
+
+  // Touch Swipe for Mobile
+  let touchStartX = 0;
+  host.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, {passive: true});
+
+  host.addEventListener('touchend', e => {
+    const touchEndX = e.changedTouches[0].screenX;
+    if(touchStartX - touchEndX > 45){
+      index = (index + 1) % photos.length;
+      render();
+      restart();
+    } else if(touchEndX - touchStartX > 45){
+      index = (index - 1 + photos.length) % photos.length;
+      render();
+      restart();
+    }
+  }, {passive: true});
+
+  render();
+  restart();
 })();
 </script>
-</body></html>
+</body>
+</html>

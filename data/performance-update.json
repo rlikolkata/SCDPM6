@@ -1,6 +1,8 @@
 {
   "lastUpdated": "2026-10-21",
   "updatedBy": "",
+  "savedAt": "2026-10-21T10:45:45.143Z",
+  "source": "admin-entry",
   "performanceData": [
     {
       "label": "Cleanliness campaigns conducted",
@@ -46,6 +48,50 @@
       "target": 20,
       "daily": 2,
       "cumulative": 27
+    }
+  ],
+  "recordData": [
+    {
+      "title": "Record Management (Physical Files)",
+      "subtitle": "Physical Files (Total Target: 50)",
+      "rows": [
+        [
+          "Reviewed",
+          2,
+          50
+        ],
+        [
+          "To be transferred to NAI",
+          "—",
+          "NA"
+        ],
+        [
+          "Identified for weeding",
+          1,
+          25
+        ],
+        [
+          "Weeded",
+          1,
+          25
+        ]
+      ]
+    },
+    {
+      "title": "Record Management (e-Files)",
+      "subtitle": "e-Files (Total Target: 20)",
+      "rows": [
+        [
+          "Reviewed",
+          2,
+          27
+        ],
+        [
+          "Closed",
+          0,
+          0
+        ]
+      ]
     }
   ]
 }
