@@ -1,0 +1,51 @@
+{
+  "lastUpdated": "2026-10-21",
+  "updatedBy": "",
+  "performanceData": [
+    {
+      "label": "Cleanliness campaigns conducted",
+      "unit": "campaigns",
+      "icon": "🧹",
+      "currency": false,
+      "target": 20,
+      "daily": 5,
+      "cumulative": 50
+    },
+    {
+      "label": "Revenue from scrap disposal",
+      "unit": "₹",
+      "icon": "₹",
+      "currency": true,
+      "target": 40000,
+      "daily": null,
+      "cumulative": 52000
+    },
+    {
+      "label": "Space freed",
+      "unit": "sq. ft.",
+      "icon": "▧",
+      "currency": false,
+      "target": 3000,
+      "daily": 500,
+      "cumulative": 11500
+    },
+    {
+      "label": "Physical files reviewed",
+      "unit": "files",
+      "icon": "▤",
+      "currency": false,
+      "target": 50,
+      "daily": 2,
+      "cumulative": 50
+    },
+    {
+      "label": "e-Files reviewed",
+      "unit": "e-files",
+      "icon": "▣",
+      "currency": false,
+      "target": 20,
+      "daily": 2,
+      "cumulative": 27
+    }
+  ]
+}
