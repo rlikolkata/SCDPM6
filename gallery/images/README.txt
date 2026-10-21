@@ -1,0 +1,1 @@
+Place approved campaign photographs in this folder. Use simple filenames such as pledge-2026-09-17.jpg or cleanliness-drive-2026-09-24.jpg. Then list each filename, caption and date in ../gallery.json.
